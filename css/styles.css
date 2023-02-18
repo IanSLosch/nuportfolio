@@ -1,0 +1,47 @@
+
+/****tentative color theme*****//*
+
+deep blue #14268F
+light blue #5770FF
+mid blue #354EDB
+deep gold #8F6F06
+bright gold #DBB435
+*/
+
+.masthead {
+    height: 90vh;
+    width: 100%;
+    margin-top: -66px;
+    position: relative;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+.countdown {
+justify-content: flex-end;
+flex-flow: column wrap;
+}
+
+body {
+  background-color: gainsboro;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+}
+
+.sitefooter {
+    background-color: rgba(0,0,0,.9);
+    padding: 20px 0;
+}
+
+
+
+.navbar {
+}
