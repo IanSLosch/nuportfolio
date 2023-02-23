@@ -1,128 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" />
-    <link href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet" />
-    
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet" />
 
 
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
 
-    <link rel="icon" href="favicon.ico?v=2">
-    <title>TheRoundTable</title>
+
+
+  <link rel="icon" href="favicon.ico?v=2">
+  <title>TheRoundTable</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="gradient-bg">
-            <div class="color-overlay">
-                <nav class="navbar navbar-expand-md navbar-dark ">
-                    <div class="container">
-                        <a class="navbar-brand" href="#">
-                            <img src="image/logo.png" height="40" width="230" />
-                        </a>
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                            <i class="fa fa-solid fa-bars"></i>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarCollapse">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="bannedlist.html">Banned List</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
-                            </ul>
-                        <span class="navbar-text ml-auto">
-                            <a role="button" data-toggle="modal" data-target="#loginModal">
-                                <div><i class="fa fa-solid fa-hat-wizard"></i><span class="d-none d-sm-inline ms-sm-1"> Login</span></div>
-                            </a>
-                        </span>
-                        </div>
-                    </div>
-                </nav>
-                <div class="container d-flex flex-column justify-content-end align-items-end main-display">
-                        <h2>Phase 1: Nomination</h2>
-                        <h4>Time left to vote:</h4>
-                        <h1>13:20:37:56</h1>
-                </div>
+  <header>
+    <div class="gradient-bg">
+      <div class="color-overlay">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.png" height="40" width="230" />
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+              <i class="fa fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="bannedlist.html">Banned List</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+              </ul>
+              <span class="navbar-text ml-auto">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                  <div><i class="fa fa-solid fa-hat-wizard"></i><span class="d-none d-sm-inline ms-sm-1"> Login</span>
+                  </div>
+                </a>
+              </span>
             </div>
+          </div>
+        </nav>
+        <div class="container d-flex flex-column justify-content-end align-items-end main-display">
+          <h2>Phase 1: Nomination</h2>
+          <h4>Time left to vote:</h4>
+          <h1>13:20:37:56</h1>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <div class="container movevoteup text-center" style="height: 100px;">
-        <div class="row justify-content-center">
-            <div class="col col-sm-4 my-2">
-                <div class="card" style="width: 20rem;">
-                    <img src="/image/oraclefull.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Thassa's Oracle</h5>
-                        <div class="input-group rounded">
-                            <input type="search" class="form-control rounded" placeholder="Search"/>
-                            <span class="input-group-text border-0" id="search-addon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </div>
-                        <div class="text-center mt-2">
-                            <a href="#" class="btn btn-primary">Submit</a>
-                        </div>
-                    </div>
-                </div>
+  <div class="container movevoteup text-center" style="height: 100px;">
+    <div class="row justify-content-center text-white">
+      <div class="col-10 col-sm-12">
+        <h3>Cards to be Banned</h3>
+      </div>
+      <div class="col-10 col-sm-12">
+        <p>Vote for the cards you think should be placed on the banned list. The top three nominees will move on the the next phase.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/oraclefull.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thassa's Oracle</h5>
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
             </div>
-            <div class="col col-sm-4 my-2">
-                <div class="card" style="width: 20rem;">
-                    <img src="/image/breachart.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Underworld Breach</h5>
-                        <div class="input-group rounded">
-                            <input type="search" class="form-control rounded" placeholder="Search"/>
-                            <span class="input-group-text border-0" id="search-addon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </div>
-                        <div class="text-center mt-2">
-                            <a href="#" class="btn btn-primary">Submit</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
             </div>
-            <div class="col col-sm-4 my-2">
-                <div class="card" style="width: 20rem;">
-                    <img src="/image/docksideart.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dockside Extortionist</h5>
-                        <div class="input-group rounded">
-                            <input type="search" class="form-control rounded" placeholder="Search"/>
-                            <span class="input-group-text border-0" id="search-addon">
-                                <i class="fas fa-search"></i>
-                            </span>
-                        </div>
-                        <div class="text-center mt-2">
-                            <a href="#" class="btn btn-primary">Submit</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/breachart.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Underworld Breach</h5>
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/docksideart.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dockside Extortionist</h5>
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
+    <!-- middle divider-->
+    <div class="row justify-content-center text-white mt-5">
+      <div class="col-10 col-sm-12">
+        <h3>Release from the banned list</h3>
+      </div>
+      <div class="col-10 col-sm-12">
+        <p>Nominate 3 card that you would like to see released from the banned list. The top three vote getters will proceed to the next stage.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/oraclefull.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Thassa's Oracle</h5>
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/breachart.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Underworld Breach</h5>
+            <div class="input-group rounded">
+              <input type="search" class="form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-4 my-2">
+        <div class="card">
+          <img src="/image/docksideart.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dockside Extortionist</h5>
+            <div class="input-group rounded">
+              <input type="search" class="fa form-control rounded" placeholder="Search" />
+              <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" class="btn btn-primary">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
