@@ -4,16 +4,20 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "start": "npm run watch:all",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "scss": "node-sass -o css/ css/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
     "lite": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "node-sass": "^6.0.1"
+    "node-sass": "^6.0.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
