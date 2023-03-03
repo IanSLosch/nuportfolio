@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+
+
+
+  <link rel="icon" href="favicon.ico?v=2">
+  <title>TheRoundTable</title>
+</head>
+
+
+
+
+
+<body>
+    <header class="sticky-top solid-header">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.png" height="40" width="230" />
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <i class="fa fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="bannedlist.html">Banned List</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <div><i class="fa fa-solid fa-hat-wizard"></i><span class="d-none d-sm-inline ms-sm-1"> Login</span>
+                    </div>
+                </a>
+                </span>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label"> Remember me</label>
+                    </div>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="my-5 text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">About Page</h1>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Lorem</a>
+          <a href="#" class="btn btn-secondary my-2">Ipsum</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="d-flex mb-5">
+        <div class="justify-content-center text-center mb-5">
+          <h3>Things that are important that need to be said:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer mt-auto site-footer-1" >
+        <div class="container">
+          <div class="row text-center ">
+            <div class="col ml-auto">
+              <a href="#">Contact</a>
+            </div>
+            <div class="col ml-auto">
+              <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="col ml-auto">
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer mt-auto site-footer-2" >
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <a href="#"><i class="fa-regular fa-copyright"></i> TheRoundTable 2023</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    
+      <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+</body>
+
+</html>

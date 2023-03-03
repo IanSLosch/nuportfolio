@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" />
+  <link href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+
+
+
+  <link rel="icon" href="favicon.ico?v=2">
+  <title>TheRoundTable</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="gradient-bg bg-image-p2">
+      <div class="color-overlay">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.png" height="40" width="230" />
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+              <i class="fa fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="bannedlist.html">Banned List</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Help</a></li>
+              </ul>
+              <span class="navbar-text ml-auto">
+                <a role="button" id="loginButton" data-toggle="modal" data-target="#loginModal">
+                  <div><i class="fa fa-solid fa-hat-wizard"></i><span class="d-none d-sm-inline ms-sm-1"> Login</span>
+                  </div>
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav>
+        <div class="container d-flex flex-column justify-content-end align-items-end main-display">
+          <h2>Phase 2: Final Voting</h2>
+          <h4>Time left to vote:</h4>
+          <h2 id="countdown"></h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Login</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginEmail">Email address</label>
+                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                </div>
+                <div class="form-group col-12">
+                  <label class="sr-only" for="loginPassword">Password</label>
+                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label"> Remember me</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container movevoteup text-center">
+    <div class="row justify-content-center text-white">
+      <div class="col-10 col-sm-12">
+        <h3>Cards to be Banned or Unbanned</h3>
+      </div>
+      <div class="col-10 col-sm-12">
+        <p>This is the final round, cards that recieve a 67% or greater result in their status being changed will do so.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="voting-display col-4 col-md-12 mx-4">
+        <div class="flexbox" id="banBallot">
+        </div>
+      </div>
+      <div class="voting-display col-4 col-md-12 mx-4">
+        <div class="flexbox" id="unbanBallot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer mt-auto site-footer-1">
+    <div class="container">
+      <div class="row text-center ">
+        <div class="col ml-auto">
+          <a href="#">Contact</a>
+        </div>
+        <div class="col ml-auto">
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="col ml-auto">
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer mt-auto site-footer-2">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <a href="#"><i class="fa-regular fa-copyright"></i> TheRoundTable 2023</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/scripts-index2.js"></script>
+</body>
+
+</html>
