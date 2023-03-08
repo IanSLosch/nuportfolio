@@ -99,6 +99,20 @@ a:active {
 }
 
 /*    Body    */
+[id^="search-results-"] {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+    max-height: 100px;
+    overflow-y: auto;
+    color: black;
+  }
+
+
 
 /*    Pages without header image    */
 .solid-header {

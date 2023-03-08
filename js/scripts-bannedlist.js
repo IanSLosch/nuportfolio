@@ -42,7 +42,6 @@ let commanderBannedList = [
     "Tolarian Academy",
     "Trade Secrets",
     "Upheaval",
-    "Worldfire",
     "Yawgmoth's Bargain"
 ];
 
