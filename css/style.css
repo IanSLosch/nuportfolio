@@ -67,11 +67,9 @@ a:active {
   height: 100%;
   background-color: rgba(24, 18, 43, 0.5); }
 
-.voting-display {
-  max-width: 380px; }
-
 /*    Body    */
-[id^="search-results-"] {
+/*    Index1   */
+.search-results {
   position: absolute;
   top: 100%;
   left: 0;
@@ -82,6 +80,10 @@ a:active {
   max-height: 100px;
   overflow-y: auto;
   color: black; }
+
+/*    Index1   */
+.voting-display {
+  max-width: 380px; }
 
 /*    Pages without header image    */
 .solid-header {
