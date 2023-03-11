@@ -69,18 +69,6 @@ a:active {
 
 /*    Body    */
 /*    Index1   */
-.search-results {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  z-index: 999;
-  max-height: 100px;
-  overflow-y: auto;
-  color: black; }
-
 /*    Index1   */
 .voting-display {
   max-width: 380px; }
@@ -105,10 +93,6 @@ a:active {
 
 .main-display {
   height: 70vh; }
-
-.movevoteup {
-  margin-top: -10%;
-  margin-bottom: 10%; }
 
 .list-display {
   object-fit: scale-down;
